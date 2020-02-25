@@ -39,4 +39,10 @@ export class PessoaListComponent implements OnInit {
       this.router.navigate(['update', cpf]);
     }
 
+    confirmDelete(cpf: string, nome: string) {
+      if(confirm("Deseja excluir a pessoa: " + nome + " CPF: " + cpf)) {
+        this.deletePessoa(cpf);
+      }
+    }
+
 }

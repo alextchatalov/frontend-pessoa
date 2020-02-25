@@ -9,6 +9,7 @@ import { PessoaListComponent } from './pessoa-list/pessoa-list.component';
 import { UpdatePessoaComponent } from './update-pessoa/update-pessoa.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { AlertModule } from './alert/alert.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    AlertModule,
     HttpClientModule
   ],
   providers: [],
